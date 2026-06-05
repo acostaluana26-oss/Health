@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APEX — Wellness Tracker</title>
+  <title>APEX ‚Äî Wellness Tracker</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
@@ -38,7 +38,7 @@
       padding-bottom: 80px;
     }
 
-    /* ── UTILITY ── */
+    /* ‚îÄ‚îÄ UTILITY ‚îÄ‚îÄ */
     .hidden { display: none !important; }
     .view { min-height: 100vh; padding: 24px 20px 40px; max-width: 480px; margin: 0 auto; }
 
@@ -48,7 +48,7 @@
     .text-green { color: var(--green); }
     .text-red { color: var(--red); }
 
-    /* ── BUTTONS ── */
+    /* ‚îÄ‚îÄ BUTTONS ‚îÄ‚îÄ */
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       padding: 14px 28px; border-radius: 12px; font-size: 14px; font-weight: 600;
@@ -63,7 +63,7 @@
     .btn-full { width: 100%; }
     .btn-sm { padding: 8px 16px; font-size: 13px; border-radius: 8px; }
 
-    /* ── CARDS ── */
+    /* ‚îÄ‚îÄ CARDS ‚îÄ‚îÄ */
     .card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -74,7 +74,7 @@
     .card-accent { border-left: 3px solid var(--accent); }
     .card-green { border-left: 3px solid var(--green); }
 
-    /* ── FORMS ── */
+    /* ‚îÄ‚îÄ FORMS ‚îÄ‚îÄ */
     .form-group { margin-bottom: 20px; }
     .form-label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text2); margin-bottom: 8px; }
     .form-input {
@@ -86,7 +86,7 @@
     .form-input::placeholder { color: var(--text3); }
     textarea.form-input { resize: vertical; min-height: 80px; }
 
-    /* ── RANGE INPUT ── */
+    /* ‚îÄ‚îÄ RANGE INPUT ‚îÄ‚îÄ */
     .range-group { display: flex; align-items: center; gap: 12px; }
     .range-value { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--accent); min-width: 32px; text-align: center; }
     input[type="range"] {
@@ -98,7 +98,7 @@
       background: var(--accent); cursor: pointer; box-shadow: 0 0 8px var(--accent-glow);
     }
 
-    /* ── MOOD PICKER ── */
+    /* ‚îÄ‚îÄ MOOD PICKER ‚îÄ‚îÄ */
     .mood-row { display: flex; gap: 8px; justify-content: space-between; }
     .mood-btn {
       flex: 1; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center;
@@ -109,7 +109,7 @@
     .mood-btn.selected { border-color: var(--accent); background: var(--accent-dim); }
     .mood-btn.selected span.mood-label { color: var(--accent); }
 
-    /* ── YES/NO TOGGLE ── */
+    /* ‚îÄ‚îÄ YES/NO TOGGLE ‚îÄ‚îÄ */
     .yn-row { display: flex; gap: 8px; }
     .yn-btn {
       flex: 1; padding: 10px; text-align: center; border-radius: 10px;
@@ -120,7 +120,7 @@
     .yn-btn.no.selected { border-color: var(--red); background: var(--red-dim); color: var(--red); }
     .yn-btn.little.selected { border-color: var(--yellow); background: rgba(250,204,21,0.1); color: var(--yellow); }
 
-    /* ── MOMENTUM BAR ── */
+    /* ‚îÄ‚îÄ MOMENTUM BAR ‚îÄ‚îÄ */
     .momentum-track {
       height: 6px; border-radius: 3px; background: var(--border);
       overflow: hidden; margin: 8px 0;
@@ -130,7 +130,7 @@
       background: linear-gradient(90deg, var(--accent), #fbbf24);
     }
 
-    /* ── NAV ── */
+    /* ‚îÄ‚îÄ NAV ‚îÄ‚îÄ */
     #app-nav {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
       background: rgba(13,13,13,0.92); backdrop-filter: blur(12px);
@@ -146,7 +146,7 @@
     .nav-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text3); transition: color 0.15s; }
     .nav-item.active .nav-label, .nav-item:hover .nav-label { color: var(--accent); }
 
-    /* ── ONBOARDING ── */
+    /* ‚îÄ‚îÄ ONBOARDING ‚îÄ‚îÄ */
     #view-onboarding {
       display: flex; flex-direction: column; justify-content: center;
       min-height: 100vh; padding: 40px 28px;
@@ -156,10 +156,10 @@
     .onboard-title { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 0.9; letter-spacing: 0.02em; margin-bottom: 16px; }
     .onboard-sub { font-size: 15px; color: var(--text2); line-height: 1.6; }
 
-    /* ── WEIGHT RANGE ── */
+    /* ‚îÄ‚îÄ WEIGHT RANGE ‚îÄ‚îÄ */
     .goal-range-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
-    /* ── DASHBOARD ── */
+    /* ‚îÄ‚îÄ DASHBOARD ‚îÄ‚îÄ */
     .dash-greeting {
       margin-bottom: 28px;
     }
@@ -172,7 +172,7 @@
     .momentum-score { font-family: 'Bebas Neue', sans-serif; font-size: 42px; line-height: 1; }
     .momentum-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
 
-    /* ── AI MESSAGE ── */
+    /* ‚îÄ‚îÄ AI MESSAGE ‚îÄ‚îÄ */
     .ai-card { position: relative; overflow: hidden; }
     .ai-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
@@ -188,7 +188,7 @@
     .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ── TODAY'S PLAN CARD ── */
+    /* ‚îÄ‚îÄ TODAY'S PLAN CARD ‚îÄ‚îÄ */
     .plan-day-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
     .plan-day-item:last-child { border-bottom: none; }
     .plan-day-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
@@ -202,10 +202,10 @@
     .plan-day-check { font-size: 18px; cursor: pointer; padding: 4px; border-radius: 6px; border: none; background: none; transition: transform 0.15s; }
     .plan-day-check:hover { transform: scale(1.2); }
 
-    /* ── COPY BUTTON ── */
+    /* ‚îÄ‚îÄ COPY BUTTON ‚îÄ‚îÄ */
     .copy-btn-wrap { margin-top: 8px; }
 
-    /* ── CHECK-IN FORM ── */
+    /* ‚îÄ‚îÄ CHECK-IN FORM ‚îÄ‚îÄ */
     .checkin-section-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 0.04em; margin-bottom: 4px; }
     .checkin-subtitle { font-size: 13px; color: var(--text2); margin-bottom: 24px; }
     .checkin-progress { display: flex; gap: 6px; margin-bottom: 28px; }
@@ -217,7 +217,7 @@
 
     .step-question { font-size: 18px; font-weight: 600; margin-bottom: 20px; line-height: 1.4; }
 
-    /* ── WEEKS VIEW ── */
+    /* ‚îÄ‚îÄ WEEKS VIEW ‚îÄ‚îÄ */
     .weeks-header { margin-bottom: 28px; }
     .weeks-title { font-family: 'Bebas Neue', sans-serif; font-size: 52px; letter-spacing: 0.02em; line-height: 1; }
     .weeks-sub { font-size: 13px; color: var(--text2); margin-top: 4px; }
@@ -268,7 +268,7 @@
     .week-progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.4s ease; }
     .week-progress-pct { font-size: 11px; font-weight: 600; color: var(--text2); min-width: 32px; text-align: right; }
 
-    /* ── WEIGHT VIEW ── */
+    /* ‚îÄ‚îÄ WEIGHT VIEW ‚îÄ‚îÄ */
     .weight-title { font-family: 'Bebas Neue', sans-serif; font-size: 52px; letter-spacing: 0.02em; line-height: 1; margin-bottom: 4px; }
     .current-weight-display { display: flex; align-items: baseline; gap: 6px; margin: 16px 0; }
     .current-weight-num { font-family: 'Bebas Neue', sans-serif; font-size: 64px; line-height: 1; color: var(--accent); }
@@ -279,11 +279,11 @@
       font-size: 12px; font-weight: 600; color: var(--text2); margin-bottom: 20px;
     }
 
-    /* ── SVG CHART ── */
+    /* ‚îÄ‚îÄ SVG CHART ‚îÄ‚îÄ */
     .chart-wrap { margin-bottom: 20px; position: relative; }
     .weight-chart { width: 100%; height: 180px; display: block; overflow: visible; }
 
-    /* ── WEIGHT LOG ── */
+    /* ‚îÄ‚îÄ WEIGHT LOG ‚îÄ‚îÄ */
     .weight-entry { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--border); }
     .weight-entry:last-child { border-bottom: none; }
     .weight-entry-date { font-size: 13px; color: var(--text2); }
@@ -293,11 +293,11 @@
     .delta-up { background: var(--red-dim); color: var(--red); }
     .delta-same { background: var(--card2); color: var(--text3); }
 
-    /* ── SETTINGS ── */
+    /* ‚îÄ‚îÄ SETTINGS ‚îÄ‚îÄ */
     .settings-title { font-family: 'Bebas Neue', sans-serif; font-size: 52px; letter-spacing: 0.02em; line-height: 1; margin-bottom: 28px; }
     .api-key-display { font-family: monospace; font-size: 12px; color: var(--text3); word-break: break-all; margin-top: 6px; }
 
-    /* ── NOTIFICATION TOAST ── */
+    /* ‚îÄ‚îÄ NOTIFICATION TOAST ‚îÄ‚îÄ */
     #toast {
       position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(20px);
       background: var(--card); border: 1px solid var(--border); border-radius: 10px;
@@ -306,7 +306,7 @@
     }
     #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-    /* ── DAY CONTEXT MENU ── */
+    /* ‚îÄ‚îÄ DAY CONTEXT MENU ‚îÄ‚îÄ */
     .day-context {
       position: fixed; inset: 0; z-index: 150; display: flex; align-items: flex-end;
       justify-content: center; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
@@ -321,21 +321,21 @@
     .day-context-desc { font-size: 14px; color: var(--text2); margin-bottom: 20px; line-height: 1.5; }
     .day-context-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
 
-    /* ── CHECKIN COMPLETE ── */
+    /* ‚îÄ‚îÄ CHECKIN COMPLETE ‚îÄ‚îÄ */
     .checkin-done-anim { text-align: center; padding: 32px 0; animation: popIn 0.4s ease; }
     @keyframes popIn { 0% { transform: scale(0.8); opacity: 0; } 70% { transform: scale(1.05); } 100% { transform: scale(1); opacity: 1; } }
     .checkin-done-emoji { font-size: 56px; margin-bottom: 12px; }
     .checkin-done-title { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--accent); }
 
-    /* ── SCROLLBAR ── */
+    /* ‚îÄ‚îÄ SCROLLBAR ‚îÄ‚îÄ */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-    /* ── DIVIDER ── */
+    /* ‚îÄ‚îÄ DIVIDER ‚îÄ‚îÄ */
     .divider { height: 1px; background: var(--border); margin: 20px 0; }
 
-    /* ── STREAK BADGES ── */
+    /* ‚îÄ‚îÄ STREAK BADGES ‚îÄ‚îÄ */
     .streak-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
     .streak-badge {
       display: flex; align-items: center; gap: 5px; padding: 5px 10px;
@@ -344,18 +344,18 @@
     }
     .streak-badge.hot { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
 
-    /* ── INLINE ERROR ── */
+    /* ‚îÄ‚îÄ INLINE ERROR ‚îÄ‚îÄ */
     .error-msg { font-size: 13px; color: var(--red); background: var(--red-dim); padding: 10px 14px; border-radius: 10px; margin: 12px 0; }
   </style>
 </head>
 <body>
 
-<!-- ══════════════════════ ONBOARDING ══════════════════════ -->
+<!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê ONBOARDING ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
 <div id="view-onboarding" class="view">
   <div class="onboard-hero">
     <div class="onboard-eyebrow">Your Training. Your Terms.</div>
     <div class="onboard-title bebas">APEX</div>
-    <p class="onboard-sub">11 weeks. Half marathon ready. The best version of you — for real this time.</p>
+    <p class="onboard-sub">11 weeks. Half marathon ready. The best version of you ‚Äî for real this time.</p>
   </div>
   <form id="onboarding-form">
     <div class="form-group">
@@ -374,14 +374,14 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="form-label">Finish this: "Best shape of my life means…"</label>
+      <label class="form-label">Finish this: "Best shape of my life means‚Ä¶"</label>
       <textarea id="ob-best-shape" class="form-input" placeholder="e.g. crossing a finish line feeling strong, not surviving it" required></textarea>
     </div>
-    <button type="submit" class="btn btn-primary btn-full" style="margin-top: 8px;">LET'S GO →</button>
+    <button type="submit" class="btn btn-primary btn-full" style="margin-top: 8px;">LET'S GO ‚Üí</button>
   </form>
 </div>
 
-<!-- ══════════════════════ SETTINGS ══════════════════════ -->
+<!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê SETTINGS ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
 <div id="view-settings" class="view hidden">
   <div class="settings-title bebas">SETTINGS</div>
 
@@ -413,7 +413,7 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="form-label">"Best shape of my life means…"</label>
+      <label class="form-label">"Best shape of my life means‚Ä¶"</label>
       <textarea id="s-best-shape" class="form-input"></textarea>
     </div>
     <button class="btn btn-secondary btn-sm" onclick="saveProfile()">Save Profile</button>
@@ -425,12 +425,12 @@
   </div>
 </div>
 
-<!-- ══════════════════════ DASHBOARD ══════════════════════ -->
+<!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê DASHBOARD ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
 <div id="view-dashboard" class="view hidden">
   <div class="dash-greeting">
     <div class="dash-eyebrow" id="dash-eyebrow">Good morning</div>
-    <div class="dash-name bebas" id="dash-name">—</div>
-    <div class="dash-date" id="dash-date">—</div>
+    <div class="dash-name bebas" id="dash-name">‚Äî</div>
+    <div class="dash-date" id="dash-date">‚Äî</div>
   </div>
 
   <!-- Momentum -->
@@ -438,10 +438,10 @@
     <div class="momentum-header">
       <div>
         <div class="label-sm">Momentum Score</div>
-        <div class="momentum-score" id="momentum-score">—</div>
+        <div class="momentum-score" id="momentum-score">‚Äî</div>
       </div>
       <div style="text-align:right">
-        <div class="momentum-label" id="momentum-label" style="color:var(--text2)">—</div>
+        <div class="momentum-label" id="momentum-label" style="color:var(--text2)">‚Äî</div>
         <div id="streak-info" style="font-size:12px;color:var(--text3);margin-top:4px"></div>
       </div>
     </div>
@@ -471,20 +471,20 @@
 
   <!-- Copy Summary -->
   <div class="copy-btn-wrap" id="copy-btn-wrap" style="display:none">
-    <button class="btn btn-ghost btn-full btn-sm" onclick="copySummary()">📋 Copy Morning Summary</button>
+    <button class="btn btn-ghost btn-full btn-sm" onclick="copySummary()">üìã Copy Morning Summary</button>
   </div>
 </div>
 
-<!-- ══════════════════════ WEEKS ══════════════════════ -->
+<!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê WEEKS ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
 <div id="view-weeks" class="view hidden">
   <div class="weeks-header">
     <div class="weeks-title bebas">TRAINING PLAN</div>
-    <div class="weeks-sub">Jun 5 → Aug 30 · 13 Weeks · Half Marathon Ready</div>
+    <div class="weeks-sub">Jun 5 ‚Üí Aug 30 ¬∑ 13 Weeks ¬∑ Half Marathon Ready</div>
   </div>
   <div id="weeks-container"></div>
 </div>
 
-<!-- ══════════════════════ WEIGHT ══════════════════════ -->
+<!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê WEIGHT ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
 <div id="view-weight" class="view hidden">
   <div>
     <div class="weight-title bebas">WEIGHT LOG</div>
@@ -494,11 +494,11 @@
   <div class="card">
     <div class="label-sm" style="margin-bottom:8px">Current</div>
     <div class="current-weight-display">
-      <span class="current-weight-num" id="weight-current-num">—</span>
+      <span class="current-weight-num" id="weight-current-num">‚Äî</span>
       <span class="current-weight-unit">lbs</span>
     </div>
     <div class="goal-range-badge" id="weight-goal-badge">
-      <span>🎯</span><span id="weight-goal-text">—</span>
+      <span>üéØ</span><span id="weight-goal-text">‚Äî</span>
     </div>
     <div id="weight-distance-msg" style="font-size:13px;color:var(--text2)"></div>
   </div>
@@ -528,22 +528,22 @@
   </div>
 </div>
 
-<!-- ══════════════════════ NAV ══════════════════════ -->
+<!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê NAV ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
 <nav id="app-nav" class="hidden">
   <button class="nav-item active" data-view="dashboard" onclick="showView('dashboard',this)">
-    <span class="nav-icon">⚡</span>
+    <span class="nav-icon">‚ö°</span>
     <span class="nav-label">Today</span>
   </button>
   <button class="nav-item" data-view="weeks" onclick="showView('weeks',this)">
-    <span class="nav-icon">📅</span>
+    <span class="nav-icon">üìÖ</span>
     <span class="nav-label">Plan</span>
   </button>
   <button class="nav-item" data-view="weight" onclick="showView('weight',this)">
-    <span class="nav-icon">📈</span>
+    <span class="nav-icon">üìà</span>
     <span class="nav-label">Weight</span>
   </button>
   <button class="nav-item" data-view="settings" onclick="showView('settings',this)">
-    <span class="nav-icon">⚙️</span>
+    <span class="nav-icon">‚öôÔ∏è</span>
     <span class="nav-label">Settings</span>
   </button>
 </nav>
@@ -551,10 +551,10 @@
 <!-- Context panel (for day actions) -->
 <div id="day-context" class="day-context hidden">
   <div class="day-context-panel">
-    <div class="day-context-title bebas" id="ctx-title">—</div>
-    <div class="day-context-desc" id="ctx-desc">—</div>
+    <div class="day-context-title bebas" id="ctx-title">‚Äî</div>
+    <div class="day-context-desc" id="ctx-desc">‚Äî</div>
     <div class="day-context-btns">
-      <button class="btn btn-primary" onclick="setDayStatus('completed')">✓ Completed</button>
+      <button class="btn btn-primary" onclick="setDayStatus('completed')">‚úì Completed</button>
       <button class="btn btn-ghost" onclick="setDayStatus('skipped')">Skip</button>
     </div>
     <button class="btn btn-ghost btn-full btn-sm" onclick="closeDayContext()">Cancel</button>
@@ -564,9 +564,9 @@
 <div id="toast"></div>
 
 <script>
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // DATA & CONSTANTS
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 const PROGRAM_START = '2026-06-05';
 const PROGRAM_END = '2026-08-30';
@@ -574,7 +574,7 @@ const MOMENTUM_THRESHOLD = 40;
 const SNACK_STREAK_THRESHOLD = 3;
 const LOW_EFFORT_THRESHOLD = 3;
 
-const MOODS = ['😴','😐','🙂','😊','🔥'];
+const MOODS = ['üò¥','üòê','üôÇ','üòä','üî•'];
 const MOOD_LABELS = ['Groggy','Meh','Okay','Good','On Fire'];
 
 // 13-week progressive mileage: [easy, tempo, long]
@@ -600,27 +600,30 @@ const WEEK_THEMES = [
 ];
 
 // Day types per week (0=Mon in plan week)
-// Mon, Tue, Wed, Thu, Fri, Sat, Sun
-const DAY_TEMPLATE = ['run_easy','strength','rest','run_tempo','strength','run_long','recovery'];
+// Mon: Easy Run | Tue: Upper Body | Wed: Lower Body | Thu: Tempo | Fri: Full Body | Sat: Long Run | Sun: Recovery
+const DAY_TEMPLATE = ['run_easy','strength_upper','strength_lower','run_tempo','strength_full','run_long','recovery'];
 const DAY_TYPE_ICONS = {
-  run_easy: '🏃', run_tempo: '⚡', run_long: '🗺️',
-  strength: '💪', rest: '😴', recovery: '🧘'
+  run_easy: 'üèÉ', run_tempo: '‚ö°', run_long: 'üó∫Ô∏è',
+  strength_upper: 'üôå', strength_lower: 'ü¶µ', strength_full: 'üí™',
+  rest: 'üò¥', recovery: 'üßò'
 };
 const DAY_TYPE_LABELS = {
-  run_easy: 'Easy Run', run_tempo: 'Tempo', run_long: 'Long Run',
-  strength: 'Strength', rest: 'Rest', recovery: 'Recovery'
+  run_easy: 'Easy Run', run_tempo: 'Tempo Run', run_long: 'Long Run',
+  strength_upper: 'Upper Body', strength_lower: 'Lower Body', strength_full: 'Full Body',
+  rest: 'Rest', recovery: 'Active Recovery'
 };
 const DAY_DOT_CLASS = {
   run_easy: 'dot-run', run_tempo: 'dot-run', run_long: 'dot-run',
-  strength: 'dot-strength', rest: 'dot-rest', recovery: 'dot-recovery'
+  strength_upper: 'dot-strength', strength_lower: 'dot-strength', strength_full: 'dot-strength',
+  rest: 'dot-rest', recovery: 'dot-recovery'
 };
 
 let ctxWeekNum = null;
 let ctxDayIdx = null;
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // STORAGE HELPERS
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function getProfile() { try { return JSON.parse(localStorage.getItem('apex_profile') || 'null'); } catch { return null; } }
 function saveProfileData(p) { localStorage.setItem('apex_profile', JSON.stringify(p)); }
@@ -633,9 +636,9 @@ function saveWeekStates(d) { localStorage.setItem('apex_weeks', JSON.stringify(d
 function getWeightLog() { try { return JSON.parse(localStorage.getItem('apex_weight') || '[]'); } catch { return []; } }
 function saveWeightLog(d) { localStorage.setItem('apex_weight', JSON.stringify(d)); }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // DATE HELPERS
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function todayStr() {
   const d = new Date();
@@ -678,7 +681,7 @@ function getWeekDateRange(weekIdx) {
   const s = getWeekStartDate(weekIdx);
   const e = new Date(s); e.setDate(s.getDate() + 6);
   const fmt = (d) => d.toLocaleDateString('en-US', { month:'short', day:'numeric' });
-  return fmt(s) + ' – ' + fmt(e);
+  return fmt(s) + ' ‚Äì ' + fmt(e);
 }
 
 function getDayOfWeekInPlan(dateStr) {
@@ -688,9 +691,9 @@ function getDayOfWeekInPlan(dateStr) {
   return jsDay === 0 ? 6 : jsDay - 1; // Mon=0,...Sun=6
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // PLAN HELPERS
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function getWeekMiles(weekIdx, dayType) {
   const m = WEEK_MILEAGE[weekIdx];
@@ -702,16 +705,21 @@ function getWeekMiles(weekIdx, dayType) {
 
 function getDayDescription(weekIdx, dayType, travelMode) {
   const miles = getWeekMiles(weekIdx, dayType);
-  const wk = weekIdx + 1;
   switch(dayType) {
-    case 'run_easy': return `${miles}mi easy run — conversational pace, stay comfortable`;
-    case 'run_tempo': return `${miles}mi tempo — comfortably hard, push your race pace`;
-    case 'run_long': return `${miles}mi long run — slow down, take it in, build base`;
-    case 'strength': return travelMode
-      ? 'Bodyweight circuit — push-ups, lunges, planks, dips (30 min)'
-      : 'Full body strength — compound lifts, progressive overload';
-    case 'rest': return 'Complete rest — sleep, hydrate, let the body adapt';
-    case 'recovery': return 'Active recovery — 20-30 min walk, yoga, or light stretch';
+    case 'run_easy': return `${miles}mi easy run ‚Äî conversational pace, stay comfortable`;
+    case 'run_tempo': return `${miles}mi tempo ‚Äî comfortably hard, push your race pace`;
+    case 'run_long': return `${miles}mi long run ‚Äî slow down, take it in, build base`;
+    case 'strength_upper': return travelMode
+      ? 'Upper body bodyweight ‚Äî push-ups, pike press, tricep dips, rows (30 min)'
+      : 'Upper body ‚Äî bench press, rows, overhead press, pull-ups, curls';
+    case 'strength_lower': return travelMode
+      ? 'Lower body bodyweight ‚Äî squats, lunges, glute bridges, step-ups (30 min)'
+      : 'Lower body ‚Äî squats, deadlifts, leg press, lunges, calf raises';
+    case 'strength_full': return travelMode
+      ? 'Full body circuit ‚Äî compound bodyweight movements, minimal rest (35 min)'
+      : 'Full body ‚Äî compound lifts, superset upper + lower, progressive overload';
+    case 'rest': return 'Complete rest ‚Äî sleep, hydrate, let the body adapt';
+    case 'recovery': return 'Active recovery ‚Äî 20-30 min walk, yoga, or light stretch';
     default: return '';
   }
 }
@@ -738,9 +746,9 @@ function getTodayPlanInfo() {
   };
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // MOMENTUM SCORE
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function calculateMomentum() {
   const checkIns = getCheckIns();
@@ -754,7 +762,7 @@ function calculateMomentum() {
     maxPoints += 10;
     if (ci) {
       points += 3; // checked in
-      points += ci.energy || 0; // energy 1-5 → up to 5 pts
+      points += ci.energy || 0; // energy 1-5 ‚Üí up to 5 pts
       // bonus for no stress snacking
       if (ci.stressSnack === 'no') points += 2;
     }
@@ -764,7 +772,7 @@ function calculateMomentum() {
     if (weekIdx !== null) {
       const dayIdx = getDayOfWeekInPlan(dateStr);
       const dayType = DAY_TEMPLATE[dayIdx];
-      if (dayType !== 'rest') {
+      if (dayType !== 'rest' && dayType !== 'recovery') {
         maxPoints += 5;
         const status = weekStates[weekIdx]?.days?.[dayIdx];
         if (status === 'completed') points += 5;
@@ -830,9 +838,9 @@ function getCheckinStreak() {
   return streak;
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // ONBOARDING
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 document.getElementById('onboarding-form').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -856,9 +864,9 @@ document.getElementById('onboarding-form').addEventListener('submit', function(e
   initApp();
 });
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // SETTINGS
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function saveApiKey() {
   const key = document.getElementById('s-api-key').value.trim();
@@ -866,7 +874,7 @@ function saveApiKey() {
   setApiKey(key);
   document.getElementById('s-key-status').textContent = 'Saved: ' + key.slice(0,10) + '...';
   document.getElementById('s-api-key').value = '';
-  showToast('API key saved ✓');
+  showToast('API key saved ‚úì');
 }
 
 function saveProfile() {
@@ -878,7 +886,7 @@ function saveProfile() {
   p.goalHigh = parseFloat(document.getElementById('s-goal-high').value) || p.goalHigh;
   p.bestShape = document.getElementById('s-best-shape').value.trim() || p.bestShape;
   saveProfileData(p);
-  showToast('Profile saved ✓');
+  showToast('Profile saved ‚úì');
 }
 
 function clearAllData() {
@@ -904,9 +912,9 @@ function populateSettings() {
   document.getElementById('s-key-status').textContent = key ? 'Key saved: ' + key.slice(0,10) + '...' : 'No key saved';
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // NAVIGATION
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function showView(viewName, navEl) {
   document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
@@ -929,9 +937,9 @@ function showView(viewName, navEl) {
   window.scrollTo(0, 0);
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // DASHBOARD
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function renderDashboard() {
   const profile = getProfile();
@@ -993,16 +1001,16 @@ function renderStreakBadges(score, ciStreak) {
   if (!inProgram) {
     const daysUntil = Math.ceil((start - today) / (1000*60*60*24));
     if (daysUntil > 0) {
-      addBadge(container, '🗓️', `Program starts in ${daysUntil} days`, false);
+      addBadge(container, 'üóìÔ∏è', `Program starts in ${daysUntil} days`, false);
     }
     return;
   }
 
-  addBadge(container, '📅', `Week ${weekIdx + 1} of 13`, weekIdx >= 9);
-  if (ciStreak >= 3) addBadge(container, '🔥', `${ciStreak}-day streak`, true);
+  addBadge(container, 'üìÖ', `Week ${weekIdx + 1} of 13`, weekIdx >= 9);
+  if (ciStreak >= 3) addBadge(container, 'üî•', `${ciStreak}-day streak`, true);
 
   const snackStreak = getStressSnackStreak();
-  if (snackStreak >= 2) addBadge(container, '⚠️', `Stress snacking ${snackStreak} days`, false);
+  if (snackStreak >= 2) addBadge(container, '‚ö†Ô∏è', `Stress snacking ${snackStreak} days`, false);
 }
 
 function addBadge(container, icon, text, hot) {
@@ -1015,7 +1023,7 @@ function addBadge(container, icon, text, hot) {
 function renderCheckinDone(container, ci, dateStr) {
   container.innerHTML = `
     <div class="card card-green" style="margin-bottom:16px">
-      <div class="label-sm" style="margin-bottom:8px">Today's Check-In ✓</div>
+      <div class="label-sm" style="margin-bottom:8px">Today's Check-In ‚úì</div>
       <div style="display:flex;gap:16px;flex-wrap:wrap">
         <div><span class="label-sm">Energy</span><div style="font-size:20px;font-weight:700;margin-top:4px">${ci.energy}/5</div></div>
         <div><span class="label-sm">Sleep</span><div style="font-size:20px;font-weight:700;margin-top:4px">${ci.sleep}/5</div></div>
@@ -1040,7 +1048,7 @@ function renderTodayPlan() {
   card.style.display = 'block';
   copyWrap.style.display = 'block';
 
-  const statusIcon = info.status === 'completed' ? '✅' : info.status === 'skipped' ? '⬜' : '';
+  const statusIcon = info.status === 'completed' ? '‚úÖ' : info.status === 'skipped' ? '‚¨ú' : '';
   const travelTag = info.travelMode ? ' <span style="font-size:10px;background:var(--accent-dim);color:var(--accent);padding:2px 6px;border-radius:10px;font-weight:600">TRAVEL</span>' : '';
 
   content.innerHTML = `
@@ -1050,13 +1058,13 @@ function renderTodayPlan() {
         <div class="plan-day-type">${info.icon} ${info.label}${travelTag}</div>
         <div class="plan-day-desc">${info.desc}</div>
       </div>
-      <button class="plan-day-check" onclick="openDayContext(${info.weekIdx}, ${info.dayIdx})">${statusIcon || '○'}</button>
+      <button class="plan-day-check" onclick="openDayContext(${info.weekIdx}, ${info.dayIdx})">${statusIcon || '‚óã'}</button>
     </div>`;
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // CHECK-IN FLOW
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 let ciData = {};
 let ciStep = 0;
@@ -1092,13 +1100,13 @@ function renderCIStep() {
 
   switch(CI_STEPS[ciStep]) {
     case 'energy':
-      div.innerHTML = buildSliderStep('How\'s your energy right now?', 'energy', 3, '⚡');
+      div.innerHTML = buildSliderStep('How\'s your energy right now?', 'energy', 3, '‚ö°');
       break;
     case 'sleep':
-      div.innerHTML = buildSliderStep('How well did you sleep?', 'sleep', 3, '😴');
+      div.innerHTML = buildSliderStep('How well did you sleep?', 'sleep', 3, 'üò¥');
       break;
     case 'stress':
-      div.innerHTML = buildSliderStep('Stress level?', 'stress', 3, '🧠', true);
+      div.innerHTML = buildSliderStep('Stress level?', 'stress', 3, 'üß†', true);
       break;
     case 'mood':
       div.innerHTML = `<div class="step-question">Mood check-in:</div>
@@ -1107,21 +1115,21 @@ function renderCIStep() {
             <span>${m}</span><span class="mood-label">${MOOD_LABELS[i]}</span>
           </div>`).join('')}
         </div>
-        <button class="btn btn-primary btn-full" style="margin-top:16px" onclick="nextCIStep()" id="ci-mood-next" disabled>Next →</button>`;
+        <button class="btn btn-primary btn-full" style="margin-top:16px" onclick="nextCIStep()" id="ci-mood-next" disabled>Next ‚Üí</button>`;
       break;
     case 'moved':
       div.innerHTML = `<div class="step-question">Did you move yesterday?</div>
         <div class="yn-row">
-          <div class="yn-btn yes" onclick="selectYN('moved','yes',this)">Yes 💪</div>
+          <div class="yn-btn yes" onclick="selectYN('moved','yes',this)">Yes üí™</div>
           <div class="yn-btn no" onclick="selectYN('moved','no',this)">Not really</div>
         </div>`;
       break;
     case 'snack':
-      div.innerHTML = `<div class="step-question">Any stress snacking yesterday?<br><span style="font-size:14px;font-weight:400;color:var(--text2)">Optional — keeping it real</span></div>
+      div.innerHTML = `<div class="step-question">Any stress snacking yesterday?<br><span style="font-size:14px;font-weight:400;color:var(--text2)">Optional ‚Äî keeping it real</span></div>
         <div class="yn-row">
-          <div class="yn-btn yes" onclick="selectYN3('snack','yes',this)">Yeah 😬</div>
+          <div class="yn-btn yes" onclick="selectYN3('snack','yes',this)">Yeah üò¨</div>
           <div class="yn-btn little" onclick="selectYN3('snack','little',this)">A little</div>
-          <div class="yn-btn no" onclick="selectYN3('snack','no',this)">Nope ✓</div>
+          <div class="yn-btn no" onclick="selectYN3('snack','no',this)">Nope ‚úì</div>
         </div>`;
       break;
   }
@@ -1132,16 +1140,16 @@ function renderCIStep() {
 function buildSliderStep(question, field, defaultVal, icon, lowIsGood = false) {
   return `<div class="step-question">${question}</div>
     <div class="range-group">
-      <span style="font-size:20px">${lowIsGood ? '😤' : '😴'}</span>
+      <span style="font-size:20px">${lowIsGood ? 'üò§' : 'üò¥'}</span>
       <input type="range" min="1" max="5" value="${defaultVal}" id="ci-range-${field}"
         oninput="updateSlider('${field}', this.value)">
-      <span style="font-size:20px">${lowIsGood ? '😌' : icon}</span>
+      <span style="font-size:20px">${lowIsGood ? 'üòå' : icon}</span>
     </div>
     <div style="text-align:center;margin:8px 0 16px">
       <span class="range-value" id="ci-val-${field}">${defaultVal}</span>
       <span style="font-size:14px;color:var(--text2)"> / 5</span>
     </div>
-    <button class="btn btn-primary btn-full" onclick="saveSliderAndNext('${field}')">Next →</button>`;
+    <button class="btn btn-primary btn-full" onclick="saveSliderAndNext('${field}')">Next ‚Üí</button>`;
 }
 
 function updateSlider(field, val) {
@@ -1197,9 +1205,9 @@ function submitCheckIn() {
   const container = document.getElementById('checkin-container');
   container.innerHTML = `
     <div class="checkin-done-anim">
-      <div class="checkin-done-emoji">🔥</div>
+      <div class="checkin-done-emoji">üî•</div>
       <div class="checkin-done-title bebas">CHECKED IN</div>
-      <div style="color:var(--text2);font-size:14px;margin-top:8px">Getting your coaching message…</div>
+      <div style="color:var(--text2);font-size:14px;margin-top:8px">Getting your coaching message‚Ä¶</div>
     </div>`;
 
   // Small delay then refresh
@@ -1209,9 +1217,9 @@ function submitCheckIn() {
   fetchAIMessage(checkIns[today]);
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // AI COACH
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 async function fetchAIMessage(ciData) {
   const profile = getProfile();
@@ -1222,10 +1230,10 @@ async function fetchAIMessage(ciData) {
 
   aiCard.style.display = 'block';
   aiDate.textContent = formatDate(todayStr());
-  aiMsg.innerHTML = '<div class="ai-loading"><div class="spinner"></div>Your coach is thinking…</div>';
+  aiMsg.innerHTML = '<div class="ai-loading"><div class="spinner"></div>Your coach is thinking‚Ä¶</div>';
 
   if (!apiKey) {
-    aiMsg.innerHTML = '<div class="error-msg">No API key saved. Go to Settings → add your Anthropic API key to unlock AI coaching.</div>';
+    aiMsg.innerHTML = '<div class="error-msg">No API key saved. Go to Settings ‚Üí add your Anthropic API key to unlock AI coaching.</div>';
     return;
   }
 
@@ -1248,27 +1256,27 @@ async function fetchAIMessage(ciData) {
 
   // Build current week plan summary
   const weekMiles = WEEK_MILEAGE[weekIdx] || WEEK_MILEAGE[0];
-  const planSummary = `Week ${weekIdx+1} (${WEEK_THEMES[weekIdx]}): ${travelMode ? 'TRAVEL MODE — bodyweight only' : 'Gym access'}. Runs: ${weekMiles[0]}mi easy, ${weekMiles[1]}mi tempo, ${weekMiles[2]}mi long.`;
+  const planSummary = `Week ${weekIdx+1} (${WEEK_THEMES[weekIdx]}): ${travelMode ? 'TRAVEL MODE ‚Äî bodyweight circuits only' : '3 gym days (Upper Body Tue, Lower Body Wed, Full Body Fri)'}. Runs: Mon ${weekMiles[0]}mi easy, Thu ${weekMiles[1]}mi tempo, Sat ${weekMiles[2]}mi long. Sun: active recovery.`;
 
   // Tone instruction
   let toneInstr = '';
   if (lowDays >= LOW_EFFORT_THRESHOLD) {
-    toneInstr = `\n\nIMPORTANT TONE: She has had ${lowDays} consecutive days of low energy/effort. Be warm but genuinely firm. Reference her own goals back at her. Not mean — real. She set out to do something specific, and right now she's drifting. Remind her why she started.`;
+    toneInstr = `\n\nIMPORTANT TONE: She has had ${lowDays} consecutive days of low energy/effort. Be warm but genuinely firm. Reference her own goals back at her. Not mean ‚Äî real. She set out to do something specific, and right now she's drifting. Remind her why she started.`;
   } else if ((ciData.energy <= 2 && ciData.sleep <= 2) || ciData.stress >= 4) {
     toneInstr = '\n\nIMPORTANT TONE: Low scores today. Be warm, understanding, and human. Acknowledge what she\'s carrying. Still give her one small, concrete thing she CAN do today.';
   } else if (ciData.energy >= 4 && ciData.sleep >= 4 && ciData.stress <= 2) {
-    toneInstr = '\n\nIMPORTANT TONE: High scores — she\'s feeling great! Be energetic and hyped. Match her energy. Celebrate the momentum. Make her want to crush today.';
+    toneInstr = '\n\nIMPORTANT TONE: High scores ‚Äî she\'s feeling great! Be energetic and hyped. Match her energy. Celebrate the momentum. Make her want to crush today.';
   }
 
   if (snackStreak >= SNACK_STREAK_THRESHOLD) {
-    toneInstr += `\n\nALSO: She's stress snacked ${snackStreak} days in a row. Address this specifically and compassionately — not as a judgment, but as a pattern worth naming. Offer one concrete alternative she can try.`;
+    toneInstr += `\n\nALSO: She's stress snacked ${snackStreak} days in a row. Address this specifically and compassionately ‚Äî not as a judgment, but as a pattern worth naming. Offer one concrete alternative she can try.`;
   }
 
   const prompt = `You are the personal AI fitness coach for ${profile.name}. You know her deeply.
 
 PROFILE:
 - Name: ${profile.name}
-- Goal: Reach ${profile.goalLow}–${profile.goalHigh} lbs and be half-marathon ready by August 30
+- Goal: Reach ${profile.goalLow}‚Äì${profile.goalHigh} lbs and be half-marathon ready by August 30
 - What "best shape of my life" means to her: "${profile.bestShape}"
 - Starting weight: ${profile.startWeight} lbs
 - Base: College student, active runner, 20mi/week training base
@@ -1291,11 +1299,11 @@ Momentum score: ${momentum}/100
 Check-in streak: ${ciStreak} days${toneInstr}
 
 Write a personalized daily coaching message for ${profile.name}. Rules:
-- 3–5 sentences, conversational, never generic
+- 3‚Äì5 sentences, conversational, never generic
 - Always reference something she ACTUALLY logged (specific numbers, specific patterns)
 - Reference her stated goal ("${profile.bestShape}") when relevant
 - If she has a workout today, name it specifically
-- End with ONE concrete action for today — specific, not vague
+- End with ONE concrete action for today ‚Äî specific, not vague
 - Do NOT start with "Hey" or her name. Start mid-thought, like a real coach would.
 - No bullet points. Just real talk.`;
 
@@ -1353,9 +1361,9 @@ function showAIMessage(ci, dateStr) {
   }
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // COPY SUMMARY
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function copySummary() {
   const profile = getProfile();
@@ -1368,9 +1376,9 @@ function copySummary() {
   const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-  let text = `APEX — Morning Summary\n`;
+  let text = `APEX ‚Äî Morning Summary\n`;
   text += `${dayNames[now.getDay()]}, ${monthNames[now.getMonth()]} ${now.getDate()}\n`;
-  text += `━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+  text += `‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ‚îÅ\n\n`;
 
   if (ci) {
     text += `TODAY'S CHECK-IN\n`;
@@ -1390,24 +1398,24 @@ function copySummary() {
   }
 
   const weekIdx = getCurrentWeekNum();
-  text += `PROGRAM: Week ${weekIdx+1} of 13 — ${WEEK_THEMES[weekIdx]}\n`;
-  text += `Goal: ${profile?.goalLow}–${profile?.goalHigh} lbs + half marathon ready by Aug 30\nProgram: Jun 5 – Aug 30 (13 weeks)`;
+  text += `PROGRAM: Week ${weekIdx+1} of 13 ‚Äî ${WEEK_THEMES[weekIdx]}\n`;
+  text += `Goal: ${profile?.goalLow}‚Äì${profile?.goalHigh} lbs + half marathon ready by Aug 30\nProgram: Jun 5 ‚Äì Aug 30 (13 weeks)`;
 
   navigator.clipboard.writeText(text).then(() => {
-    showToast('Summary copied to clipboard ✓');
+    showToast('Summary copied to clipboard ‚úì');
   }).catch(() => {
     // Fallback
     const ta = document.createElement('textarea');
     ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
     document.body.appendChild(ta); ta.select(); document.execCommand('copy');
     document.body.removeChild(ta);
-    showToast('Summary copied ✓');
+    showToast('Summary copied ‚úì');
   });
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // WEEKS VIEW
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function renderWeeks() {
   const container = document.getElementById('weeks-container');
@@ -1423,7 +1431,7 @@ function renderWeeks() {
     const miles = WEEK_MILEAGE[i];
 
     const completedCount = Object.values(days).filter(v => v === 'completed').length;
-    const scheduledCount = DAY_TEMPLATE.filter(t => t !== 'rest').length; // 6 non-rest days
+    const scheduledCount = DAY_TEMPLATE.filter(t => t !== 'rest').length; // 7 active days (no rest day)
     const pct = Math.round((completedCount / scheduledCount) * 100);
 
     const card = document.createElement('div');
@@ -1446,7 +1454,7 @@ function renderWeeks() {
         </div>
       </div>
       <div class="travel-toggle-row">
-        <span class="travel-label">✈️ Travel Mode <span style="font-size:11px;color:var(--text3)">(bodyweight only)</span></span>
+        <span class="travel-label">‚úàÔ∏è Travel Mode <span style="font-size:11px;color:var(--text3)">(bodyweight only)</span></span>
         <label class="toggle-switch">
           <input type="checkbox" ${travelMode ? 'checked' : ''} onchange="toggleTravel(${i}, this.checked)">
           <span class="toggle-slider"></span>
@@ -1472,10 +1480,10 @@ function renderWeekDayCell(weekIdx, dayIdx, type, days, travelMode, miles) {
 
   const icon = DAY_TYPE_ICONS[type];
   const dayShort = ['M','T','W','Th','F','Sa','Su'][dayIdx];
-  const travelDot = (type === 'strength' && travelMode) ? '✈️' : '';
+  const travelDot = (type === 'strength' && travelMode) ? '‚úàÔ∏è' : '';
 
   return `<div class="${classes}" onclick="openDayContext(${weekIdx}, ${dayIdx})" title="${DAY_TYPE_LABELS[type]}">
-    <span class="week-day-icon">${status === 'completed' ? '✅' : status === 'skipped' ? '⬜' : (travelDot || icon)}</span>
+    <span class="week-day-icon">${status === 'completed' ? '‚úÖ' : status === 'skipped' ? '‚¨ú' : (travelDot || icon)}</span>
     <span class="week-day-label">${dayShort}</span>
   </div>`;
 }
@@ -1485,7 +1493,7 @@ function toggleTravel(weekIdx, enabled) {
   if (!weekStates[weekIdx]) weekStates[weekIdx] = { travel: false, days: {} };
   weekStates[weekIdx].travel = enabled;
   saveWeekStates(weekStates);
-  showToast(enabled ? 'Travel mode on — bodyweight only ✈️' : 'Travel mode off — gym workouts ✓');
+  showToast(enabled ? 'Travel mode on ‚Äî bodyweight only ‚úàÔ∏è' : 'Travel mode off ‚Äî gym workouts ‚úì');
 
   // Re-render just that week's days
   const miles = WEEK_MILEAGE[weekIdx];
@@ -1528,7 +1536,7 @@ function setDayStatus(status) {
   weekStates[ctxWeekNum].days[ctxDayIdx] = status;
   saveWeekStates(weekStates);
   closeDayContext();
-  showToast(status === 'completed' ? 'Workout logged ✓' : 'Day skipped');
+  showToast(status === 'completed' ? 'Workout logged ‚úì' : 'Day skipped');
   renderWeeks();
   renderTodayPlan();
 }
@@ -1537,9 +1545,9 @@ document.getElementById('day-context').addEventListener('click', function(e) {
   if (e.target === this) closeDayContext();
 });
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // WEIGHT VIEW
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function renderWeight() {
   const profile = getProfile();
@@ -1547,16 +1555,16 @@ function renderWeight() {
 
   // Current weight display
   const current = log.length > 0 ? log[log.length - 1].weight : null;
-  document.getElementById('weight-current-num').textContent = current !== null ? current : '—';
+  document.getElementById('weight-current-num').textContent = current !== null ? current : '‚Äî';
   document.getElementById('weight-goal-text').textContent =
-    profile ? `Goal: ${profile.goalLow}–${profile.goalHigh} lbs` : '—';
+    profile ? `Goal: ${profile.goalLow}‚Äì${profile.goalHigh} lbs` : '‚Äî';
 
   if (current !== null && profile) {
     const inRange = current >= profile.goalLow && current <= profile.goalHigh;
     const below = current < profile.goalLow;
     const diff = inRange ? 0 : below ? profile.goalLow - current : current - profile.goalHigh;
     if (inRange) {
-      document.getElementById('weight-distance-msg').innerHTML = `<span style="color:var(--green);font-weight:600">✓ You're in your goal range!</span>`;
+      document.getElementById('weight-distance-msg').innerHTML = `<span style="color:var(--green);font-weight:600">‚úì You're in your goal range!</span>`;
     } else if (below) {
       document.getElementById('weight-distance-msg').textContent = `${diff.toFixed(1)} lbs below your range`;
     } else {
@@ -1580,10 +1588,10 @@ function renderWeight() {
         const diff = entry.weight - prev.weight;
         if (Math.abs(diff) >= 0.05) {
           const cls = diff < 0 ? 'delta-down' : 'delta-up';
-          const sign = diff < 0 ? '↓' : '↑';
+          const sign = diff < 0 ? '‚Üì' : '‚Üë';
           deltaHtml = `<span class="weight-delta ${cls}">${sign}${Math.abs(diff).toFixed(1)}</span>`;
         } else {
-          deltaHtml = `<span class="weight-delta delta-same">→</span>`;
+          deltaHtml = `<span class="weight-delta delta-same">‚Üí</span>`;
         }
       }
       return `<div class="weight-entry">
@@ -1730,13 +1738,13 @@ function logWeight() {
   log.push({ date: todayStr(), weight: val });
   saveWeightLog(log);
   input.value = '';
-  showToast('Weight logged ✓');
+  showToast('Weight logged ‚úì');
   renderWeight();
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // TOAST
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 let toastTimeout;
 function showToast(msg) {
@@ -1747,9 +1755,9 @@ function showToast(msg) {
   toastTimeout = setTimeout(() => toast.classList.remove('show'), 2500);
 }
 
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // INIT
-// ═══════════════════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 
 function initApp() {
   const profile = getProfile();
